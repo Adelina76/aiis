@@ -22,6 +22,8 @@ def test_col_orders():
 
 
 def test_rows():
+    init_database()
+    fill_random_data()
     assert Clients.select().count() >= 10
     assert Orders.select().count() >= 10
 
