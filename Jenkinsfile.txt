@@ -3,6 +3,7 @@ pipeline {
     options {
         timestamps()
     }
+trigger {pollSCM('*****')}
     stages {
 	stage("Install Libraries") {
 		steps {
